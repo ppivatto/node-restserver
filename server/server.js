@@ -14,6 +14,10 @@ app.get('/', function (req, res) {
     res.json('Hello World')
 })
 
+app.get('/usuario', function (req, res) {
+    res.json('get User')
+})
+
 app.get('/usuario/:id', function (req, res) {
     let id = req.params.id;
     res.json({
